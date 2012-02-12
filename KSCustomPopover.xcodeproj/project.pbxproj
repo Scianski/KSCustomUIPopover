@@ -1,0 +1,289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32A935B814E87B2A00A27D6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A935B714E87B2A00A27D6C /* UIKit.framework */; };
+		32A935BA14E87B2A00A27D6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A935B914E87B2A00A27D6C /* Foundation.framework */; };
+		32A935BC14E87B2A00A27D6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A935BB14E87B2A00A27D6C /* CoreGraphics.framework */; };
+		32A935C214E87B2A00A27D6C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32A935C014E87B2A00A27D6C /* InfoPlist.strings */; };
+		32A935C414E87B2A00A27D6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A935C314E87B2A00A27D6C /* main.m */; };
+		32A935C814E87B2A00A27D6C /* KSCustomPopoverAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A935C714E87B2A00A27D6C /* KSCustomPopoverAppDelegate.m */; };
+		32A935CB14E87B2A00A27D6C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A935C914E87B2A00A27D6C /* MainStoryboard.storyboard */; };
+		32A935CE14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A935CD14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m */; };
+		32A935D114E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A935D014E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32A935B314E87B2A00A27D6C /* KSCustomPopover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSCustomPopover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A935B714E87B2A00A27D6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		32A935B914E87B2A00A27D6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		32A935BB14E87B2A00A27D6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32A935BF14E87B2A00A27D6C /* KSCustomPopover-Info.plist */ = {isa = PBXFileReference; path = "KSCustomPopover-Info.plist"; sourceTree = "<group>"; };
+		32A935C114E87B2A00A27D6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32A935C314E87B2A00A27D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32A935C514E87B2A00A27D6C /* KSCustomPopover-Prefix.pch */ = {isa = PBXFileReference; path = "KSCustomPopover-Prefix.pch"; sourceTree = "<group>"; };
+		32A935C614E87B2A00A27D6C /* KSCustomPopoverAppDelegate.h */ = {isa = PBXFileReference; path = KSCustomPopoverAppDelegate.h; sourceTree = "<group>"; };
+		32A935C714E87B2A00A27D6C /* KSCustomPopoverAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCustomPopoverAppDelegate.m; sourceTree = "<group>"; };
+		32A935CA14E87B2A00A27D6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		32A935CC14E87B2A00A27D6C /* KSCustomPopoverMainViewController.h */ = {isa = PBXFileReference; path = KSCustomPopoverMainViewController.h; sourceTree = "<group>"; };
+		32A935CD14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCustomPopoverMainViewController.m; sourceTree = "<group>"; };
+		32A935CF14E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.h */ = {isa = PBXFileReference; path = KSCustomPopoverFlipsideViewController.h; sourceTree = "<group>"; };
+		32A935D014E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCustomPopoverFlipsideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32A935B014E87B2A00A27D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A935B814E87B2A00A27D6C /* UIKit.framework in Frameworks */,
+				32A935BA14E87B2A00A27D6C /* Foundation.framework in Frameworks */,
+				32A935BC14E87B2A00A27D6C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32A935A814E87B2A00A27D6C = {
+			isa = PBXGroup;
+			children = (
+				32A935BD14E87B2A00A27D6C /* KSCustomPopover */,
+				32A935B614E87B2A00A27D6C /* Frameworks */,
+				32A935B414E87B2A00A27D6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32A935B414E87B2A00A27D6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32A935B314E87B2A00A27D6C /* KSCustomPopover.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32A935B614E87B2A00A27D6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32A935B714E87B2A00A27D6C /* UIKit.framework */,
+				32A935B914E87B2A00A27D6C /* Foundation.framework */,
+				32A935BB14E87B2A00A27D6C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32A935BD14E87B2A00A27D6C /* KSCustomPopover */ = {
+			isa = PBXGroup;
+			children = (
+				32A935C614E87B2A00A27D6C /* KSCustomPopoverAppDelegate.h */,
+				32A935C714E87B2A00A27D6C /* KSCustomPopoverAppDelegate.m */,
+				32A935C914E87B2A00A27D6C /* MainStoryboard.storyboard */,
+				32A935CC14E87B2A00A27D6C /* KSCustomPopoverMainViewController.h */,
+				32A935CD14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m */,
+				32A935CF14E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.h */,
+				32A935D014E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m */,
+				32A935BE14E87B2A00A27D6C /* Supporting Files */,
+			);
+			path = KSCustomPopover;
+			sourceTree = "<group>";
+		};
+		32A935BE14E87B2A00A27D6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32A935BF14E87B2A00A27D6C /* KSCustomPopover-Info.plist */,
+				32A935C014E87B2A00A27D6C /* InfoPlist.strings */,
+				32A935C314E87B2A00A27D6C /* main.m */,
+				32A935C514E87B2A00A27D6C /* KSCustomPopover-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32A935B214E87B2A00A27D6C /* KSCustomPopover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A935D414E87B2A00A27D6C /* Build configuration list for PBXNativeTarget "KSCustomPopover" */;
+			buildPhases = (
+				32A935AF14E87B2A00A27D6C /* Sources */,
+				32A935B014E87B2A00A27D6C /* Frameworks */,
+				32A935B114E87B2A00A27D6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KSCustomPopover;
+			productName = KSCustomPopover;
+			productReference = 32A935B314E87B2A00A27D6C /* KSCustomPopover.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32A935AA14E87B2A00A27D6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 32A935AD14E87B2A00A27D6C /* Build configuration list for PBXProject "KSCustomPopover" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 32A935A814E87B2A00A27D6C;
+			productRefGroup = 32A935B414E87B2A00A27D6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32A935B214E87B2A00A27D6C /* KSCustomPopover */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32A935B114E87B2A00A27D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A935C214E87B2A00A27D6C /* InfoPlist.strings in Resources */,
+				32A935CB14E87B2A00A27D6C /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32A935AF14E87B2A00A27D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A935C414E87B2A00A27D6C /* main.m in Sources */,
+				32A935C814E87B2A00A27D6C /* KSCustomPopoverAppDelegate.m in Sources */,
+				32A935CE14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m in Sources */,
+				32A935D114E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32A935C014E87B2A00A27D6C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32A935C114E87B2A00A27D6C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		32A935C914E87B2A00A27D6C /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32A935CA14E87B2A00A27D6C /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32A935D214E87B2A00A27D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		32A935D314E87B2A00A27D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32A935D514E87B2A00A27D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSCustomPopover/KSCustomPopover-Prefix.pch";
+				INFOPLIST_FILE = "KSCustomPopover/KSCustomPopover-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		32A935D614E87B2A00A27D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KSCustomPopover/KSCustomPopover-Prefix.pch";
+				INFOPLIST_FILE = "KSCustomPopover/KSCustomPopover-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32A935AD14E87B2A00A27D6C /* Build configuration list for PBXProject "KSCustomPopover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A935D214E87B2A00A27D6C /* Debug */,
+				32A935D314E87B2A00A27D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32A935D414E87B2A00A27D6C /* Build configuration list for PBXNativeTarget "KSCustomPopover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A935D514E87B2A00A27D6C /* Debug */,
+				32A935D614E87B2A00A27D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32A935AA14E87B2A00A27D6C /* Project object */;
+}
