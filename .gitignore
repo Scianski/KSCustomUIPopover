@@ -1,0 +1,61 @@
+# XCode (and ancestors) per-user config (very noisy, and not relevant)
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+
+*.pyc 
+*~.nib/
+
+# Generated files
+VersionX-revision.h
+
+
+# build products
+build/*
+build/
+*.[oa]
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+# Textmate - if you build your xcode projects with it
+*.tm_build_errors
+
+# osx noise
+.DS_Store
+profile
+
+*tmproj
+**/~*
+
+###############
+
+*xcodeproj/xcuserdata/*
+*xcodeproj/project.xcworkspace/xcuserdata/*
+
+*xcodeproj/*mode*
+*xcodeproj/*pbxuser
+*xcodeproj/*per*
+*xcodeproj/project.xcworkspace
+*xcodeproj/xcuserdata
+**/build
+**/*xcodeproj/*mode*
+**/*xcodeproj/*pbxuser
+**/*xcodeproj/*per*
+**/*xcodeproj/project.xcworkspace
+**/*xcodeproj/xcuserdata
+**/**/*xcodeproj/*mode*
+**/**/*xcodeproj/*pbxuser
+**/**/*xcodeproj/*per*
+**/**/*xcodeproj/project.xcworkspace
+**/**/*xcodeproj/xcuserdata
+
+WorkspaceState.xcuserstate
+
+KSCustomPopover.xcodeproj/xcuserdata/*
+KSCustomPopover.xcodeproj/project.xcworkspace/xcuserdata/*
