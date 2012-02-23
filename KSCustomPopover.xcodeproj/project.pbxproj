@@ -16,6 +16,12 @@
 		32A935CB14E87B2A00A27D6C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A935C914E87B2A00A27D6C /* MainStoryboard.storyboard */; };
 		32A935CE14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A935CD14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m */; };
 		32A935D114E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A935D014E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m */; };
+		32CFCBF814EB2B930044EF7A /* KSCustomPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CFCBF714EB2B920044EF7A /* KSCustomPopoverBackgroundView.m */; };
+		32CFCC0014EB2CA50044EF7A /* popover-black-bcg-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CFCBFB14EB2CA50044EF7A /* popover-black-bcg-image.png */; };
+		32CFCC0114EB2CA50044EF7A /* popover-black-bottom-arrow-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CFCBFC14EB2CA50044EF7A /* popover-black-bottom-arrow-image.png */; };
+		32CFCC0214EB2CA50044EF7A /* popover-black-left-arrow-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CFCBFD14EB2CA50044EF7A /* popover-black-left-arrow-image.png */; };
+		32CFCC0314EB2CA50044EF7A /* popover-black-right-arrow-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CFCBFE14EB2CA50044EF7A /* popover-black-right-arrow-image.png */; };
+		32CFCC0414EB2CA50044EF7A /* popover-black-top-arrow-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 32CFCBFF14EB2CA50044EF7A /* popover-black-top-arrow-image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,17 +29,24 @@
 		32A935B714E87B2A00A27D6C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		32A935B914E87B2A00A27D6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32A935BB14E87B2A00A27D6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		32A935BF14E87B2A00A27D6C /* KSCustomPopover-Info.plist */ = {isa = PBXFileReference; path = "KSCustomPopover-Info.plist"; sourceTree = "<group>"; };
+		32A935BF14E87B2A00A27D6C /* KSCustomPopover-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KSCustomPopover-Info.plist"; sourceTree = "<group>"; };
 		32A935C114E87B2A00A27D6C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32A935C314E87B2A00A27D6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32A935C514E87B2A00A27D6C /* KSCustomPopover-Prefix.pch */ = {isa = PBXFileReference; path = "KSCustomPopover-Prefix.pch"; sourceTree = "<group>"; };
-		32A935C614E87B2A00A27D6C /* KSCustomPopoverAppDelegate.h */ = {isa = PBXFileReference; path = KSCustomPopoverAppDelegate.h; sourceTree = "<group>"; };
+		32A935C514E87B2A00A27D6C /* KSCustomPopover-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KSCustomPopover-Prefix.pch"; sourceTree = "<group>"; };
+		32A935C614E87B2A00A27D6C /* KSCustomPopoverAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCustomPopoverAppDelegate.h; sourceTree = "<group>"; };
 		32A935C714E87B2A00A27D6C /* KSCustomPopoverAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCustomPopoverAppDelegate.m; sourceTree = "<group>"; };
 		32A935CA14E87B2A00A27D6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		32A935CC14E87B2A00A27D6C /* KSCustomPopoverMainViewController.h */ = {isa = PBXFileReference; path = KSCustomPopoverMainViewController.h; sourceTree = "<group>"; };
+		32A935CC14E87B2A00A27D6C /* KSCustomPopoverMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCustomPopoverMainViewController.h; sourceTree = "<group>"; };
 		32A935CD14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCustomPopoverMainViewController.m; sourceTree = "<group>"; };
-		32A935CF14E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.h */ = {isa = PBXFileReference; path = KSCustomPopoverFlipsideViewController.h; sourceTree = "<group>"; };
+		32A935CF14E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSCustomPopoverFlipsideViewController.h; sourceTree = "<group>"; };
 		32A935D014E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSCustomPopoverFlipsideViewController.m; sourceTree = "<group>"; };
+		32CFCBF614EB2B920044EF7A /* KSCustomPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSCustomPopoverBackgroundView.h; sourceTree = "<group>"; };
+		32CFCBF714EB2B920044EF7A /* KSCustomPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSCustomPopoverBackgroundView.m; sourceTree = "<group>"; };
+		32CFCBFB14EB2CA50044EF7A /* popover-black-bcg-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-black-bcg-image.png"; sourceTree = "<group>"; };
+		32CFCBFC14EB2CA50044EF7A /* popover-black-bottom-arrow-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-black-bottom-arrow-image.png"; sourceTree = "<group>"; };
+		32CFCBFD14EB2CA50044EF7A /* popover-black-left-arrow-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-black-left-arrow-image.png"; sourceTree = "<group>"; };
+		32CFCBFE14EB2CA50044EF7A /* popover-black-right-arrow-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-black-right-arrow-image.png"; sourceTree = "<group>"; };
+		32CFCBFF14EB2CA50044EF7A /* popover-black-top-arrow-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popover-black-top-arrow-image.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3293D48314ED239A004BF851 /* Custom Popover Bacground View */ = {
+			isa = PBXGroup;
+			children = (
+				32CFCBF614EB2B920044EF7A /* KSCustomPopoverBackgroundView.h */,
+				32CFCBF714EB2B920044EF7A /* KSCustomPopoverBackgroundView.m */,
+			);
+			name = "Custom Popover Bacground View";
+			sourceTree = "<group>";
+		};
 		32A935A814E87B2A00A27D6C = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,7 @@
 				32A935CD14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m */,
 				32A935CF14E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.h */,
 				32A935D014E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m */,
+				3293D48314ED239A004BF851 /* Custom Popover Bacground View */,
 				32A935BE14E87B2A00A27D6C /* Supporting Files */,
 			);
 			path = KSCustomPopover;
@@ -95,12 +118,25 @@
 		32A935BE14E87B2A00A27D6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				32CFCBFA14EB2C840044EF7A /* Images */,
 				32A935BF14E87B2A00A27D6C /* KSCustomPopover-Info.plist */,
 				32A935C014E87B2A00A27D6C /* InfoPlist.strings */,
 				32A935C314E87B2A00A27D6C /* main.m */,
 				32A935C514E87B2A00A27D6C /* KSCustomPopover-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32CFCBFA14EB2C840044EF7A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				32CFCBFB14EB2CA50044EF7A /* popover-black-bcg-image.png */,
+				32CFCBFC14EB2CA50044EF7A /* popover-black-bottom-arrow-image.png */,
+				32CFCBFD14EB2CA50044EF7A /* popover-black-left-arrow-image.png */,
+				32CFCBFE14EB2CA50044EF7A /* popover-black-right-arrow-image.png */,
+				32CFCBFF14EB2CA50044EF7A /* popover-black-top-arrow-image.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +191,11 @@
 			files = (
 				32A935C214E87B2A00A27D6C /* InfoPlist.strings in Resources */,
 				32A935CB14E87B2A00A27D6C /* MainStoryboard.storyboard in Resources */,
+				32CFCC0014EB2CA50044EF7A /* popover-black-bcg-image.png in Resources */,
+				32CFCC0114EB2CA50044EF7A /* popover-black-bottom-arrow-image.png in Resources */,
+				32CFCC0214EB2CA50044EF7A /* popover-black-left-arrow-image.png in Resources */,
+				32CFCC0314EB2CA50044EF7A /* popover-black-right-arrow-image.png in Resources */,
+				32CFCC0414EB2CA50044EF7A /* popover-black-top-arrow-image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +210,7 @@
 				32A935C814E87B2A00A27D6C /* KSCustomPopoverAppDelegate.m in Sources */,
 				32A935CE14E87B2A00A27D6C /* KSCustomPopoverMainViewController.m in Sources */,
 				32A935D114E87B2A00A27D6C /* KSCustomPopoverFlipsideViewController.m in Sources */,
+				32CFCBF814EB2B930044EF7A /* KSCustomPopoverBackgroundView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +324,7 @@
 				32A935D614E87B2A00A27D6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -2,11 +2,12 @@
 //  KSCustomPopoverMainViewController.m
 //  KSCustomPopover
 //
-//  Created by Chris Smith on 12.02.2012.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Chris Scianski on 12.02.2012.
+//  Copyright (c) 2012 www.scinaski.com. All rights reserved.
 //
 
 #import "KSCustomPopoverMainViewController.h"
+#import "KSCustomPopoverBackgroundView.h"
 
 @implementation KSCustomPopoverMainViewController
 
@@ -77,7 +78,9 @@
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
         UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
+        popoverController.popoverBackgroundViewClass = [KSCustomPopoverBackgroundView class];
         self.flipsidePopoverController = popoverController;
+        
         popoverController.delegate = self;
     }
 }
