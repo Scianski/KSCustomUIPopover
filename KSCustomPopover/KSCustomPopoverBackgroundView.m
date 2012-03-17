@@ -7,8 +7,6 @@
 
 #import "KSCustomPopoverBackgroundView.h"
 
-#pragma mark Defines
-
 // Predefined arrow image width and height
 #define ARROW_WIDTH 35.0
 #define ARROW_HEIGHT 19.0
@@ -26,7 +24,7 @@
     UIImage *_topArrowImage;
     UIImage *_leftArrowImage;
     UIImage *_rightArrowImage;
-    UIImage *_bottomArrowImage;   
+    UIImage *_bottomArrowImage;
 }
 
 @end
@@ -59,7 +57,7 @@
 
 #pragma mark - Custom setters for updating layout
 
-// Whenever arrow changes direction or position layout subviews will be called in order to update arrow and backgorund images frames
+// Whenever arrow changes direction or position layout subviews will be called in order to update arrow and backgorund frames
 
 -(void) setArrowOffset:(CGFloat)arrowOffset
 {
@@ -102,8 +100,8 @@
     CGFloat popoverImageOriginX = 0;
     CGFloat popoverImageOriginY = 0;
     
-    CGFloat popoverWidth = self.bounds.size.width;
-    CGFloat popoverHeight = self.bounds.size.height;
+    CGFloat popoverImageWidth = self.bounds.size.width;
+    CGFloat popoverImageHeight = self.bounds.size.height;
     
     CGFloat arrowImageOriginX = 0;
     CGFloat arrowImageOriginY = 0;
@@ -118,8 +116,8 @@
             
         case UIPopoverArrowDirectionUp:
             
-            popoverImageOriginY = ARROW_HEIGHT;
-            popoverHeight = self.bounds.size.height - ARROW_HEIGHT;
+            popoverImageOriginY = ARROW_HEIGHT - 2;
+            popoverImageHeight = self.bounds.size.height - ARROW_HEIGHT;
             
             // Calculating arrow x position using arrow offset, arrow width and popover width
             arrowImageOriginX = roundf((self.bounds.size.width - ARROW_WIDTH) / 2 + self.arrowOffset);
@@ -135,8 +133,6 @@
                 arrowImageOriginX += cornerRadius;
             }
             
-            arrowImageOriginY = 2;
-            
             // Setting arrow image for current arrow direction
             self.arrowImageView.image = _topArrowImage;
             
@@ -144,7 +140,7 @@
             
         case UIPopoverArrowDirectionDown:
             
-            popoverHeight = self.bounds.size.height - ARROW_HEIGHT;
+            popoverImageHeight = self.bounds.size.height - ARROW_HEIGHT + 2;
             
             arrowImageOriginX = roundf((self.bounds.size.width - ARROW_WIDTH) / 2 + self.arrowOffset);
             
@@ -158,7 +154,7 @@
                 arrowImageOriginX += cornerRadius;
             }
             
-            arrowImageOriginY = popoverHeight - 2;
+            arrowImageOriginY = popoverImageHeight - 2;
             
             self.arrowImageView.image = _bottomArrowImage;
             
@@ -166,10 +162,9 @@
             
         case UIPopoverArrowDirectionLeft:
             
-            popoverImageOriginX = ARROW_HEIGHT;
-            popoverWidth = self.bounds.size.width - ARROW_HEIGHT;
+            popoverImageOriginX = ARROW_HEIGHT - 2;
+            popoverImageWidth = self.bounds.size.width - ARROW_HEIGHT;
             
-            arrowImageOriginX = 2;
             arrowImageOriginY = roundf((self.bounds.size.height - ARROW_WIDTH) / 2 + self.arrowOffset);
             
             if (arrowImageOriginY + ARROW_WIDTH > self.bounds.size.height - cornerRadius)
@@ -181,7 +176,7 @@
             {
                 arrowImageOriginY += cornerRadius;
             }
-
+            
             arrowImageWidth = ARROW_HEIGHT;
             arrowImageHeight = ARROW_WIDTH;
             
@@ -191,9 +186,9 @@
             
         case UIPopoverArrowDirectionRight:
             
-            popoverWidth = self.bounds.size.width - ARROW_HEIGHT;
+            popoverImageWidth = self.bounds.size.width - ARROW_HEIGHT + 2;
             
-            arrowImageOriginX = popoverWidth - 2;
+            arrowImageOriginX = popoverImageWidth - 2;
             arrowImageOriginY = roundf((self.bounds.size.height - ARROW_WIDTH) / 2 + self.arrowOffset);
             
             if (arrowImageOriginY + ARROW_WIDTH > self.bounds.size.height - cornerRadius)
@@ -205,7 +200,7 @@
             {
                 arrowImageOriginY += cornerRadius;
             }
-
+            
             arrowImageWidth = ARROW_HEIGHT;
             arrowImageHeight = ARROW_WIDTH;
             
@@ -217,7 +212,7 @@
             break;
     }
     
-    self.popoverBackgroundImageView.frame = CGRectMake(popoverImageOriginX, popoverImageOriginY, popoverWidth, popoverHeight);
+    self.popoverBackgroundImageView.frame = CGRectMake(popoverImageOriginX, popoverImageOriginY, popoverImageWidth, popoverImageHeight);
     self.arrowImageView.frame = CGRectMake(arrowImageOriginX, arrowImageOriginY, arrowImageWidth, arrowImageHeight);
 }
 
