@@ -165,7 +165,7 @@
 		32A935AA14E87B2A00A27D6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 32A935AD14E87B2A00A27D6C /* Build configuration list for PBXProject "KSCustomPopover" */;
 			compatibilityVersion = "Xcode 3.2";
