@@ -1,9 +1,7 @@
 //
-//  GTPopoverBackgorundView.m
+//  KSPopoverBackgorundView.m
 //
 //  Created by Chris Scianski on 12.02.2012.
-//  Copyright (c) 2012 www.scinaski.com. All rights reserved.
-//
 
 #import "KSCustomPopoverBackgroundView.h"
 
