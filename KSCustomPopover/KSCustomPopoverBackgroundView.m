@@ -207,6 +207,10 @@
             break;
             
         default:
+            
+            // For popovers without arrows (Thanks Martin!)
+            popoverImageHeight = self.bounds.size.height - ARROW_HEIGHT + 2;
+            
             break;
     }
     
