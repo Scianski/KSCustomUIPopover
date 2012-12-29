@@ -115,6 +115,8 @@
 
 -(void)layoutSubviews
 {    
+    [super layoutSubviews];
+    
     CGFloat popoverImageOriginX = 0;
     CGFloat popoverImageOriginY = 0;
     
