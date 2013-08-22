@@ -143,15 +143,8 @@
             arrowImageOriginX = roundf((self.bounds.size.width - ARROW_WIDTH) / 2 + self.arrowOffset);
             
             // If arrow image exceeds rounded corner arrow image x postion is adjusted 
-            if (arrowImageOriginX + ARROW_WIDTH > self.bounds.size.width - cornerRadius)
-            {
-                arrowImageOriginX -= cornerRadius;
-            }
-            
-            if (arrowImageOriginX < cornerRadius)
-            {
-                arrowImageOriginX += cornerRadius;
-            }
+            arrowImageOriginX = MIN(arrowImageOriginX, self.bounds.size.width - ARROW_WIDTH - cornerRadius);
+            arrowImageOriginX = MAX(arrowImageOriginX, cornerRadius);
             
             // Setting arrow image for current arrow direction
             self.arrowImageView.image = _topArrowImage;
@@ -164,15 +157,8 @@
             
             arrowImageOriginX = roundf((self.bounds.size.width - ARROW_WIDTH) / 2 + self.arrowOffset);
             
-            if (arrowImageOriginX + ARROW_WIDTH > self.bounds.size.width - cornerRadius)
-            {
-                arrowImageOriginX -= cornerRadius;
-            }
-            
-            if (arrowImageOriginX < cornerRadius)
-            {
-                arrowImageOriginX += cornerRadius;
-            }
+            arrowImageOriginX = MIN(arrowImageOriginX, self.bounds.size.width - ARROW_WIDTH - cornerRadius);
+            arrowImageOriginX = MAX(arrowImageOriginX, cornerRadius);
             
             arrowImageOriginY = popoverImageHeight - 2;
             
@@ -187,15 +173,8 @@
             
             arrowImageOriginY = roundf((self.bounds.size.height - ARROW_WIDTH) / 2 + self.arrowOffset);
             
-            if (arrowImageOriginY + ARROW_WIDTH > self.bounds.size.height - cornerRadius)
-            {
-                arrowImageOriginY -= cornerRadius;
-            }
-            
-            if (arrowImageOriginY < cornerRadius)
-            {
-                arrowImageOriginY += cornerRadius;
-            }
+            arrowImageOriginY = MIN(arrowImageOriginY, self.bounds.size.height - ARROW_WIDTH - cornerRadius);
+            arrowImageOriginY = MAX(arrowImageOriginY, cornerRadius);
             
             arrowImageWidth = ARROW_HEIGHT;
             arrowImageHeight = ARROW_WIDTH;
@@ -211,15 +190,8 @@
             arrowImageOriginX = popoverImageWidth - 2;
             arrowImageOriginY = roundf((self.bounds.size.height - ARROW_WIDTH) / 2 + self.arrowOffset);
             
-            if (arrowImageOriginY + ARROW_WIDTH > self.bounds.size.height - cornerRadius)
-            {
-                arrowImageOriginY -= cornerRadius;
-            }
-            
-            if (arrowImageOriginY < cornerRadius)
-            {
-                arrowImageOriginY += cornerRadius;
-            }
+            arrowImageOriginY = MIN(arrowImageOriginY, self.bounds.size.height - ARROW_WIDTH - cornerRadius);
+            arrowImageOriginY = MAX(arrowImageOriginY, cornerRadius);
             
             arrowImageWidth = ARROW_HEIGHT;
             arrowImageHeight = ARROW_WIDTH;
